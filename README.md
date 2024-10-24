@@ -168,13 +168,21 @@ python src/evaluate.py
 ```
 
 ## Model Performance 📈
+![Training Progess](https://github.com/kashifmehdi/Diabetic_retinopathy/blob/13eeed4187b08a3ffcb741daa3862a8c9fa4e31b/assets/training_progress.png)
+
+*Training progress showing epoch-wise improvements in accuracy and loss reduction*
 
 - Training Progress:
   - Starting Accuracy: 76.16%
   - Final Accuracy: 97.05%
   - Loss Reduction: 0.6411 → 0.0896
 
-- Test Accuracy: 97.98%
+### Model Performance 🎯
+![Model Performance](https://github.com/kashifmehdi/Diabetic_retinopathy/blob/f1dc12786988a803d30f67145b0a689431a26454/assets/Evaluation.png)
+
+*Final model checkpoint showing **97.98%** test accuracy*
+
+
 
 ## Project Components 🏗️
 
@@ -219,4 +227,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-[Your contact information]
+For questions, feedback, or collaboration opportunities, feel free to contact the project maintainer at [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:your-email@example.com) or [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-profile/).
