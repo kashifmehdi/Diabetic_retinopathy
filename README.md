@@ -51,9 +51,82 @@ Diabetic Retinopathy/
 
 ## Configuration 
 Model and training parameters can be modified in `config.yaml`
+```
 
 Setup Instructions
 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/diabetic-retinopathy.git
 cd diabetic-retinopathy
+```
+
+2. Create a Virtual Environment
+You can create a virtual environment using Python's venv:
+```bash
+python -m venv venv
+```
+
+Activate the virtual environment:
+
+ - On Windows:
+```bash
+venv\Scripts\activate
+```
+
+ - On macOS/Linux:
+```bash
+source venv/bin/activate
+```
+
+3. Install Dependencies
+Install the required Python packages using pip:
+```bash
+pip install -r requirements.txt
+```
+
+4. Configuration
+The project configuration is controlled by the config.yaml file. It contains paths to the dataset, hyperparameters, and model architecture. Adjust the file as needed:
+
+```yaml
+# Example configuration
+
+data:
+  train_csv: 'data/train.csv'           # Path to the training CSV file
+  train_images_dir: 'data/train_images' # Directory containing training images
+  test_images_dir: 'data/test_images'   # Directory containing test images
+
+hyperparameters:
+  batch_size: 32                        # Batch size for training
+  epochs: 10                            # Number of training epochs
+  learning_rate: 0.001                  # Learning rate for the optimizer
+  image_size:
+    width: 224                          # Width of input images
+    height: 224                         # Height of input images
+  num_classes: 5                        # Number of classification labels
+
+model:
+  architecture: 'EfficientNetB3'        # Model architecture to use
+  weights: 'imagenet'                   # Pre-trained weights to use
+```
+
+5. Train the Model
+Run the training script:
+
+```bash
+python src/train.py
+```
+
+6. Evaluate the Model
+Run the evaluation script to test the model on your dataset:
+```bash
+python src/evaluate.py
+```
+
+7. Jupyter Notebook for EDA
+The EDA.ipynb notebook in the notebook directory contains exploratory data analysis (EDA) code. You can use it to better understand the dataset before training the model.
+
+8. Logs
+Training logs will be saved in the logs/ directory.
+
+
+
