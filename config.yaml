@@ -1,0 +1,23 @@
+# Configuration file for diabetic Retinopathy Detection
+
+# Dataset Configuration
+data:
+  train_csv: 'data/train.csv'           #Path to training CSV file.......AI_Projects\Diabetic Retinopathy\data\train.csv
+  train_images_dir: 'data/train_images' # Directory Containing training images
+  test_images_dir: 'data/test_images'   # Directory Containing test images
+
+
+# Hyperparameter
+hyperparameters:
+  batch_size: 32                       # Batch size for training
+  epochs: 10                           # Number of training epochs  
+  learning_rate: 0.001                 # Learning Rate for the optimizer
+  image_size:                          # Image size for input
+   width: 224
+   height: 224 
+  num_classes: 5                       # Number of Classification
+
+# Model Configuration
+model:
+  architecture: 'EfficientNetB3'       # Model Architecture
+  weights: 'imagenet'                  # Pre-trained weights 
