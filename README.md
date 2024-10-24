@@ -51,3 +51,9 @@ Diabetic Retinopathy/
 
 ## Configuration 
 Model and training parameters can be modified in `config.yaml`
+
+Setup Instructions
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/diabetic-retinopathy.git
+cd diabetic-retinopathy
