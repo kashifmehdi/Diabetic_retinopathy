@@ -1,0 +1,15 @@
+# Ignore Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore logs and large datasets
+logs/
+data/train_images/
+data/test_images/
+
+# Ignore any Jupyter notebook checkpoints
+.ipynb_checkpoints/
